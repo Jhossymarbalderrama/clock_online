@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Tecno";
+    src: url("src/fonts/tecno.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #00eeff;
+    box-sizing: border-box;
+    font-family: Tecno;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #010718;
+    overflow: hidden;
+}
+
+#oclock {
+    /* background-color:#333; */
+    font-size: 25vh;
+    text-shadow: 1px 1px 20px #00d1e0;
+    color: #00eeff;
+    letter-spacing: 20px;
+}
+
+#oclock span {
+    letter-spacing: 8px;
+    color: #00eeff;
+    text-shadow: 1px 1px 35px #00d1e0;
+    font-size: 4.2vh;
+    position: relative;
+    top: -19vh;
+    left: -9.1vh;
+}
+
+#date {
+    letter-spacing: 10px;
+    font-size: 5vh;
+    text-shadow: 1px 1px 20px #00d1e0;
+}
+
+#copyright, #developed{
+    position: absolute;
+    bottom: 15px;
+    font-size: 1.2vh;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#copyright{
+    position: absolute; 
+    right: 2.5vh;     
+}
+
+#developed{
+    position: absolute;
+    left: 2.5vh;        
+}
+
+/* Desktop */
+@media screen  and ( min-width: 1024px){
+   
+}
+
+/* Tablet */
+@media screen  and ( min-width: 768px) and (max-width: 1023px){
+    #oclock{
+        font-size: 20vh;
+        letter-spacing: 10px;
+    }
+
+    #oclock span{
+        font-size: 3vh;
+        letter-spacing: 3px;
+        top: -15.1vh;
+        left: -6vh;
+    }
+
+    #date{
+        font-size: 4vh;
+        letter-spacing: 7px;
+    }
+
+    #copyright, #developed{        
+        font-size: 1.5vh;                
+    }
+
+    #copyright{
+        position: absolute; 
+        right: 2.5vh;     
+    }
+    
+    #developed{
+        position: absolute;
+        left: 2.5vh;        
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    #oclock{
+        font-size: 14vh;
+        letter-spacing: normal;
+    }
+
+    #oclock span{
+        font-size: 2vh;
+        letter-spacing: normal;
+        top: -10.5vh;
+        left: -3.5vh;
+    }
+
+    #date{
+        font-size: 3vh;
+        letter-spacing: normal;
+    }
+
+    #copyright, #developed{
+        position: absolute;       
+        font-size: 1.5vh;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #copyright{
+        width: 100%;
+        bottom: 20px;
+        position: absolute; 
+        left: -1vh;
+    }
+    
+    #developed{
+        width: 100%;
+        bottom: 45px;
+        position: absolute;
+        left: 0vh;
+    }
+}
+
